@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>upload the file : GFG</title>
+</head>
+<body>
+    <form action = "/success" method = "post" enctype="multipart/form-data">
+        <input type="file" name="file" /><br>
+        <input type = "submit" value="Upload">
+    </form>
+    <table class="center">
+        <tr>
+            <td>
+                <form action="/EnchancedCompression">
+                    <button type="submit" >Enhanced Compression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadEnchancedCompression">
+                    Compression data for Enhanced algorithm<br>
+                    <button type="submit">Download</button>
+                 </form>
+            </td>
+            <td>
+                <form action = "/UploadEnchancedCompressionFile" method = "post" enctype="multipart/form-data">
+                    <label> Upload Compressed file: </label>
+                    <input type="file" id="enchancedCompressedFile" name="enchancedCompressedFile" /> <br> 
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+            <td>
+                <form action="/EnchancedDecompression">
+                    <button type="submit" >Enhanced Decompression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadEnchancedDecompression">
+                    Decompression data for Enhanced algorithm<br>
+                    <button type="submit">Download</button>
+                </form>   
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <form action="/RLECompression">
+                    <button type="submit">RLE Compression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadRLECompression">
+                    Compression data for RLE algorithm<br>
+                    <button type="submit">Download</button>
+                 </form>
+            </td>
+            <td>
+                <form action = "/UploadRLECompressionFile" method = "post" enctype="multipart/form-data">
+                    <label> Upload Compressed file: </label>
+                    <input type="file" id="RLECompressedFile" name="RLECompressedFile" /> <br> 
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+            <td>
+                <form action="/RLEDecompression">
+                    <button type="submit">RLE Decompression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadRLEDecompression">
+                    Decompression data for RLE algorithm<br>
+                    <button type="submit">Download</button>
+                </form>   
+            </td>
+        </tr>
+
+        <!-- <tr>
+            <td>
+                <form action="/IPECompression">
+                    <button type="submit">IPE Compression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadIPECompression">
+                    Compression data for IPE algorithm<br>
+                    <button type="submit">Download</button>
+                 </form>
+            </td>
+            <td>
+                <form action = "/UploadIPECompressionFile" method = "post" enctype="multipart/form-data">
+                    <label> Upload Compressed file: </label>
+                    <input type="file" id="IPECompressedFile" name="IPECompressedFile" /> <br> 
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+            <td>
+                <form action="/IPEDecompression">
+                    <button type="submit">IPE Decompression Algorithm</button><br>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/DownloadRLEDecompression">
+                    Decompression data for IPE algorithm<br>
+                    <button type="submit">Download</button>
+                </form>   
+            </td>
+        </tr> -->
+
+
+    </table>
+</body>
+</html>
